@@ -637,9 +637,9 @@ static JSONKeyMapper* globalKeyMapper = nil;
                 if (![allowedPrimitiveTypes containsObject:propertyType]) {
 
                     //type not allowed - programmer mistaken -> exception
-                    @throw [NSException exceptionWithName:@"JSONModelProperty type not allowed"
-                                                   reason:[NSString stringWithFormat:@"Property type of %@.%@ is not supported by JSONModel.", self.class, p.name]
-                                                 userInfo:nil];
+                   // @throw [NSException exceptionWithName:@"JSONModelProperty type not allowed"
+                     //                              reason:[NSString stringWithFormat:@"Property type of %@.%@ is not supported by JSONModel.", self.class, p.name]
+                       //                          userInfo:nil];
                 }
 
             }
